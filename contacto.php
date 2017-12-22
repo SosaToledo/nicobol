@@ -7,38 +7,49 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style media="screen">
+      @media screen and (max-width:500px) {
+        .formulario{
+          flex-direction: column;
+        }
+        .formulario section{
+          width: 100%;
+          margin: 20px 0;
+        }
+        form .texto input{
+          width: 100%;
+        }
+      }
+      
       *{
         border: 0.5px dotted grey;
       }
       .formulario{
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: center;
       }
       section{
         height: 400px;
         width: 45%;
+        margin: 0 20px;
       }
-      form div{
-        border: 2px solid red;
-        height: 350px;
+      .texto{
         display: flex;
         justify-content: center;
-        align-content: center;
         flex-wrap: wrap;
       }
-      form input, form textarea{
-        border: 2px solid red;
+      .texto input{
+        width: 50%;
       }
-      form input{
-        width: 45%;
+      textarea{
+        resize: none;
       }
-      #formulario button{
+      form button{
+        margin-top: 20px;
         float: right;
-        margin: 5px;
       }
     </style>
   </head>
@@ -49,12 +60,12 @@
     <div class="content formulario">
       <section id="formulario">
         <form class="" action="index.html" method="post">
-          <div class="">
-            <input type="text" name="" value="" placeholder="nombre">
-            <input type="text" name="" value="" placeholder="correo"><br><br>
-            <textarea name="name" rows="8" cols="60" placeholder="deja tu consulta"></textarea>
+          <div class="texto">
+            <input type="text" name="" value="" placeholder="Nombre">
+            <input type="text" name="" value="" placeholder="Correo">
+            <textarea name="name" rows="8" cols="80" placeholder="Deja tu mensaje"></textarea>
           </div>
-          <button class="w3-round-large" type="submit" name="" value="">enviar</button>
+          <button type="submit" name="button">enviar</button>
         </form>
       </section>
       <section id="datos">
