@@ -1,0 +1,10 @@
+@media (max-width: 730px) {
+    #myNav{
+        display: none;
+    }
+}
+@media (min-width: 730px) {
+    .navCelulares{
+        display: none;
+    }
+}

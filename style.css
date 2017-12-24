@@ -1,0 +1,173 @@
+/*
+Theme Name: NicoBol 
+Template Theme URI: http://thinkincode.com.ar 
+Author: el equipo de Thinco
+Description: Plantilla desarrollada por Thinco. 
+Version: 1.0 
+*/
+
+body{
+    background-color: #F4F4F4;
+}
+/* Menu de navegacion */
+.pcNav{
+    width: 100%;
+    position: relative;
+    background-color: #c9c9c9;
+    height: 50px;
+}
+.logoNav{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width:190px;
+}
+.botonesNav{
+    width: 100%;
+    padding-right: 5%;
+    display: flex;
+    justify-content:flex-end;
+}
+.botonesNav a{
+    line-height: 50px;
+    font-family: Calibri, sans-serif;
+    font-weight: bold;
+    font-size: 20pt;
+    color:white;
+    margin: 0 12px;
+}
+.botonesNav a.active{
+    color:#B53829;
+}
+/* Menu de celulares */
+#myNavbar{
+    background-color: #C9C9C9;
+}
+#navDemo a{
+    border-bottom: 2px solid #c9c9c9; 
+}
+#navDemo h5{
+    display: inline-block;
+    margin: 0;
+}
+/* Animacion de la X del menu */
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* Fachada Index */
+.fachada{
+    background-image: url('img/background.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.fachada .imgFachada{
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+.fachada .row ul li{
+    background-color: #B53829;
+    margin: 10px;
+    margin-right: 0;
+    padding: 15px;
+    list-style: none;
+}
+.fachada .row ul li a{
+    text-decoration: none;
+    color: #E4E4E4;
+    margin-left: 40px; 
+}
+/* Empresa */
+.empresa{
+    background-color: #B53829;
+    margin:0;
+    display: inline-block;
+}
+.empresa h1, .empresa p{
+    width: 80%;
+    margin: 50px auto;
+    color: #F4F4F4;
+    text-align: center;
+}
+.empresa > .row{
+    margin: 0;
+}
+.row .items{
+    text-align: center;
+    padding-left: 0%;
+    position: relative;
+    padding-right: 0%;
+}
+.cajon{
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    top: 1px;
+    height: 40px;
+    background-color: #84301F;
+}
+.cajon1 {
+    position: absolute;
+    top: -40px;
+}
+.items i{
+    font-size: 60pt;
+    z-index: 5;
+    color: #F4F4F4;
+}
+.items h2{
+    z-index: 5;
+    font-size: 18pt;
+    color: #F4F4F4;
+}
+/* Preguntas & Respuestas php */
+.pregunta{
+    width: 90%;
+    margin:10px auto;
+}
+.pregunta h2{
+    color:#6A6A6A;
+    line-height: 16pt;
+    font-size: 16pt;
+    padding: 8px;
+    padding-left: 12px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: #C9C9C9;
+}
+.pregunta p{
+    padding: 0 15px;
+}
+/* Footer.php */
+footer .row{
+    background-color: #B53829;
+    padding: 18px 15px;
+    box-sizing: border-box;
+    margin: 0;
+    width: 100%;
+}
+footer .row h4{
+    background-color: #E4E4E4;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+}
