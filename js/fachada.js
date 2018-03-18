@@ -1,6 +1,18 @@
-window.onload=fachada;
+$().ready(ajustar);
+$(window).on('resize',ajustar );
 
-function fachada() {
-    var x = document.getElementsByClassName("fachada");
-    x[0].style.height=screen.height+"px";
+function ajustar() {
+    var $portada = $('#imgFachada');
+    var $empresa = $('#empresa');
+    var height = $(window).height();
+    
+    $portada.height(height);
+
+    if ( window.innerWidth > 1000){
+        var $footer = $('#footer');
+        $empresa.height(window.innerHeight - $footer.height());
+    }else{
+        $empresa.css('height',100+'%');
+
+    }
 }

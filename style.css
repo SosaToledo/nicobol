@@ -2,12 +2,12 @@
 Theme Name: NicoBol 
 Template Theme URI: http://thinkincode.com.ar 
 Author: el equipo de Thinco
-Description: Plantilla desarrollada por Thinco. 
+Descriemion: Plantilla desarrollada por Thinco. 
 Version: 1.0 
 */
 
 body{
-    background-color: #F4F4F4;
+    background-color: #B53829;
 }
 /* Menu de navegacion */
 .pcNav{
@@ -32,11 +32,11 @@ body{
     line-height: 50px;
     font-family: Calibri, sans-serif;
     font-weight: bold;
-    font-size: 20pt;
+    font-size: 20em;
     color:white;
     margin: 0 12px;
 }
-.botonesNav a.active{
+.botonesNav a.hoover{
     color:#B53829;
 }
 /* Menu de celulares */
@@ -73,42 +73,83 @@ body{
 }
 /* Fachada Index */
 .fachada{
+    height: 500px;
     background-image: url('img/background.jpg');
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.fachada > .row {
+    width: 100%;
+    margin-left: 0px !important;
 }
 .fachada .imgFachada{
     width: 80%;
     margin: auto;
     display: block;
 }
+.fachada .col-sm-8{
+    display: flex;
+    align-items: center;
+}
+.fachada .col-sm-4{
+    padding-right: 0px !important;
+}
 .fachada .row ul li{
-    background-color: #B53829;
+    background-color: rgba(181, 55, 41, 0.5);
     margin: 10px;
     margin-right: 0;
-    padding: 15px;
+    /*padding: 15px;*/
     list-style: none;
 }
 .fachada .row ul li a{
     text-decoration: none;
     color: #E4E4E4;
-    margin-left: 40px; 
+    margin: 0 4%;
+    display: block;
+    padding: 20px;
+    font-size: 1.8em;    
+    font-family: 'Archivo Black';
 }
+.fachada .row ul li:hover{
+    background-color: #B53829;
+}
+/* PRUEBA */
+.shake {
+    -webkit-animation-duration: 5.6s;
+    animation-duration: 5.6s;
+    animation-delay: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ } 
+
 /* Empresa */
 .empresa{
     background-color: #B53829;
     margin:0;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around
 }
 .empresa h1, .empresa p{
     width: 80%;
-    margin: 50px auto;
+    /*margin: 50px auto;*/
     color: #F4F4F4;
     text-align: center;
+    font-size: 1.5em;
+}
+.empresa h1{
+    /*margin: 25px auto 30px;*/
+    margin-top: 10px;
+    font-size: 3em;
+    font-family: 'Archivo Black';
 }
 .empresa > .row{
     margin: 0;
+    min-height: 20%;
 }
 .row .items{
     text-align: center;
@@ -129,13 +170,13 @@ body{
     top: -40px;
 }
 .items i{
-    font-size: 60pt;
+    font-size: 4em;
     z-index: 5;
     color: #F4F4F4;
 }
 .items h2{
     z-index: 5;
-    font-size: 18pt;
+    font-size: 1.5em;
     color: #F4F4F4;
 }
 /* Preguntas & Respuestas php */
@@ -145,8 +186,8 @@ body{
 }
 .pregunta h2{
     color:#6A6A6A;
-    line-height: 16pt;
-    font-size: 16pt;
+    line-height: 16em;
+    font-size: 16em;
     padding: 8px;
     padding-left: 12px;
     border-radius: 10px;
@@ -170,4 +211,5 @@ footer .row h4{
     padding: 15px;
     text-align: center;
     width: 90%;
+    font-size: 1.2em;
 }
