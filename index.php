@@ -7,10 +7,10 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/fachada.js"></script>
 <div class="fachada" id="imgFachada" >
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-12 col-lg-8">
             <img class="imgFachada" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo">
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-12 col-lg-4">
             <ul>
                 <li><a href="">Empresa</a></li>
                 <li><a  class="animated shake infinite" href="<?php bloginfo(url); ?>/tienda">Tienda</a></li>
@@ -46,5 +46,9 @@
             </div>
         </div>
     </div>
+<style>
+    @media screen and (max-width:1000px) {
 
+    }
+</style>
 <?php get_footer(); ?>

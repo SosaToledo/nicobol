@@ -3,30 +3,42 @@
  * Template Name: Pagina de Contacto
  **/
  ?>
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <style media="screen">
-      @media screen and (max-width:500px) {
+      @media screen and (max-width:800px) {
         .formulario{
           flex-direction: column;
+          margin:10px auto;
+          width:95%;
         }
+        /*
         .formulario section{
           width: 100%;
           margin: 60px 0;
+          padding-top:20px !important;
+        }
+        */
+        #formulario{
+          width:100%;
+          height:auto;
+          margin:50px auto 5px;
         }
         form .texto input{
           width: 100%;
         }
         #datos{
-          margin-top: 10px;
+          width:100%;
+          margin:10px auto;
+          height:auto;
+        }
+        #datos iframe{
+          height:300px !important;
         }
         form button{
           width: 100%;
+        }
+        .barraRoja{
+          position:relative !important;
+          height:40px !important;
         }
       }
 
@@ -43,39 +55,85 @@
         margin: 60px 20px;
       }
       .texto{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-around;
         padding: 10px;
         border: 3px solid  #B53829;
-        border-bottom: 6px solid  #B53829;
+        border-radius:15px;
+        background-color:#b53829;
         font-weight: bold;
       }
       .texto input{
-        color: white;
-        margin-bottom: 15px;
-        background-color:  #B53829;
-        border: 1px solid  #B53829;
+        box-sizing:border-box;
+        color: #B53829;
+        font-weight: bold;
+        padding:10px;
+        margin-bottom: 10px;
+        border: 1.5px solid  #B53829;
+        border-radius:10px;
+      }
+      .nombreInput{
+        width:40%;
+      }
+      .correoInput{
+        width:60%;
       }
       .texto textarea{
-        color:  #B53829;
-        background-color: #F4F4F4;
-        width: 100%;
-        margin-top: 20px;
-        resize: none;
-        border: 1px solid  #B53829;
+        color: #B53829;
+        font-weight: bold;
+        padding:10px;
+        border: 1.5px solid  #B53829;
+        border-radius:10px;
+        resize:none;
+        width:100%;
       }
       form button{
         border: 1px solid  #B53829;
         color: white;
+        padding:10px 20px;
+        border-radius:10px;
         background:  #B53829;
         margin-top: 20px;
         float: right;
         font-weight: bold;
+        cursor: pointer;
       }
       #datos{
-
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        
+      }
+      .celda{
+        display:flex;
+        align-items:stretch;
+        margin:0 auto;
+      }
+      .celda p{
+        display:inline-block;
+        margin-bottom:0;
+      }
+      .celda i{
+        color:#B53829;
+        font-size:30px;
+        margin-right:5px;
+      }
+      #datos iframe{
+        margin-top:10px;
+        border-radius:10px;
+        width:100%;
+        height:100%;
+      }
+      .barraRoja{
+        height:50px;
+        width:100%;
+        background-color:#b53829;
+        position:absolute;
+        bottom:0;
       }
     </style>
-  </head>
-  <body>
+  <body id="#bodyContacto">
     <?php get_header();
         get_template_part( 'menu');
     ?>
@@ -83,26 +141,41 @@
       <section id="formulario">
         <form class="" action="index.html" method="post">
           <div class="texto">
-            <input type="text" name="" value="" placeholder="Nombre">
-            <input type="text" name="" value="" placeholder="Correo">
+            <input class="nombreInput" type="text" name="" value="" placeholder="Nombre">
+            <input class="correoInput" type="text" name="" value="" placeholder="Correo">
             <textarea name="name" rows="8" cols="80" placeholder="Deja tu mensaje"></textarea>
           </div>
-          <button type="submit" name="button">enviar</button>
+          <button type="submit" name="button"> <i class="fa fa-arrow-right"></i> Enviar</button>
         </form>
       </section>
       <section id="datos">
-        <div class="">
-          <img src="" alt="">
-          <p>(2477) 432300 - 15595907 - 15586970</p>
+        <div class="celda">
+          <i class="fa fa-phone-square"></i>	
+          <p>+549 2477 432300</p>
         </div>
-        <div class="">
-          <img src="" alt="">
-          <p>Ameghino 2488 - Pergamino, Bs. As.</p>
+        <div class="celda">
+          <i class="fa fa-map-marker"></i>
+          <p>Pergamino, Buenos Aires.</p>
         </div>
-        <div class="">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.8540878269305!2d-60.57158178520459!3d-33.867651080656465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b9cab80ea679d1%3A0x2291517911eed7ef!2sBv.+Ameghino+2488%2C+Pergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1514347581104" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105979.06693254174!2d-60.635469729636384!3d-33.89362388371425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b84aad3ef60a31%3A0x481ac3277962e9c5!2sPergamino%2C+Buenos+Aires!5e0!3m2!1ses-419!2sar!4v1521501369032" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
     </div>
+    <div class="barraRoja">
+      <a style="text-decoration:none;" href="www.thinkincode.com.ar">
+        <h3 style="text-align:center;color:white;">Desarrollado con <i class="fa fa-heart"></i> por Thinco.</h3>
+      </a>
+    </div>
   </body>
+  <script>
+      $().ready(ajustar);
+      $(window).on('resize',ajustar );
+
+      function ajustar() {
+          var $empresa = $('#bodyContacto');         
+
+          if ( window.innerWidth > 1000){
+              $empresa.height(window.innerHeight);
+          }
+      }
+  </script>
 </html>
