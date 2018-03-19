@@ -7,7 +7,6 @@ Version: 1.0
 */
 
 body{
-    background-color: #B53829;
 }
 /* Menu de navegacion */
 .pcNav{
@@ -28,15 +27,20 @@ body{
     display: flex;
     justify-content:flex-end;
 }
+
 .botonesNav a{
     line-height: 50px;
     font-family: Calibri, sans-serif;
     font-weight: bold;
-    font-size: 20em;
+    font-size: 2em;
     color:white;
     margin: 0 12px;
+    text-decoration: none;
 }
-.botonesNav a.hoover{
+.botonesNav a#current{
+    color:#B53829;
+}
+.botonesNav a:hover{
     color:#B53829;
 }
 /* Menu de celulares */
@@ -116,7 +120,7 @@ body{
 .fachada .row ul li:hover{
     background-color: #B53829;
 }
-/* PRUEBA */
+/* Retrasar animacion de tienda y ponerle un ritmo adecuado */
 .shake {
     -webkit-animation-duration: 5.6s;
     animation-duration: 5.6s;
@@ -180,14 +184,15 @@ body{
     color: #F4F4F4;
 }
 /* Preguntas & Respuestas php */
+
 .pregunta{
     width: 90%;
     margin:10px auto;
 }
 .pregunta h2{
     color:#6A6A6A;
-    line-height: 16em;
-    font-size: 16em;
+    line-height: 1.5em;
+    font-size: 1.5em;
     padding: 8px;
     padding-left: 12px;
     border-radius: 10px;
@@ -197,7 +202,12 @@ body{
 .pregunta p{
     padding: 0 15px;
 }
+.contenedorPreguntas{
+    overflow: scroll;
+}
 /* Footer.php */
+
+
 footer .row{
     background-color: #B53829;
     padding: 18px 15px;
@@ -206,7 +216,7 @@ footer .row{
     width: 100%;
 }
 footer .row h4{
-    background-color: #E4E4E4;
+    background-color: white;
     margin: auto;
     padding: 15px;
     text-align: center;

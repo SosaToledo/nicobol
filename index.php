@@ -3,7 +3,7 @@
     // get_template_part( 'menu');    
 ?>
 <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-
+<body style="background-color: #B53829;" >
 <script src="<?php echo get_template_directory_uri(); ?>/js/fachada.js"></script>
 <div class="fachada" id="imgFachada" >
     <div class="row">
@@ -13,9 +13,9 @@
         <div class="col-sm-4">
             <ul>
                 <li><a href="">Empresa</a></li>
-                <li><a  class="animated shake infinite" href="">Tienda</a></li>
-                <li><a href="">Preguntas</a></li>
-                <li><a href="">Contacto</a></li>
+                <li><a  class="animated shake infinite" href="<?php bloginfo(url); ?>/tienda">Tienda</a></li>
+                <li><a href="<?php bloginfo(url); ?>/preguntasfrecuentes">Preguntas</a></li>
+                <li><a href="<?php bloginfo(url); ?>/contacto">Contacto</a></li>
             </ul>
         </div>
     </div><!-- fin row -->
