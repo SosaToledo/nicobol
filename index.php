@@ -2,9 +2,15 @@
     get_header();
 ?>
 <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-<body style="background-color: #B53829;" >
+
+<body style="background-color: #B53829;">
+
+<!-- id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" -->
+
 <script src="<?php echo get_template_directory_uri(); ?>/js/fachada.js"></script>
+
 <?php get_template_part('menu');?>
+
 <div class="fachada" id="imgFachada" >
     <div class="row">
         <div class="col-md-12 col-lg-8">
@@ -12,14 +18,14 @@
         </div>
         <div class="col-md-12 col-lg-4">
             <ul>
-                <li><a href="">Empresa</a></li>
-                <li><a  class="animated shake infinite" href="<?php bloginfo(url); ?>/tienda">Tienda</a></li>
-                <li><a href="<?php bloginfo(url); ?>/preguntasfrecuentes">Preguntas</a></li>
-                <li><a href="<?php bloginfo(url); ?>/contacto">Contacto</a></li>
+                <li><a class="scroll" href="#empresa">Empresa</a></li>
+                <li><a  class="animated shake infinite" href="<?php bloginfo('url'); ?>/tienda">Tienda</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/preguntasfrecuentes">Preguntas</a></li>
+                <li><a href="<?php bloginfo('url'); ?>/contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="menuMediano sm-12">
-            <a href="#" class="menuFlex">Empresa</a>
+            <a href="#empresa" class="menuFlex scroll">Empresa</a>
             <a href="<?php bloginfo('url');?>/tienda" class="menuFlex">Tienda</a>
             <a href="<?php bloginfo('url');?>/preguntasfrecuentes" class="menuFlex">Preguntas Frecuentes</a>
             <a href="<?php bloginfo('url');?>/contacto" class="menuFlex">Contacto</a>
@@ -128,4 +134,12 @@
 
     }
 </style>
+
+<script>
+    $('a.scroll').click(function(e){
+	e.preventDefault();
+	$('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top},999 );
+});
+</script>
+
 <?php get_footer(); ?>

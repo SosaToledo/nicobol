@@ -1,11 +1,11 @@
 <nav class="pcNav" id="myNav">
     <div class="esconderEnMedio"> 
-        <a href="<?php bloginfo(url); ?>"><img class="logoNav" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a>
+        <a href="<?php bloginfo('url'); ?>"><img class="logoNav" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo"></a>
         <div class="botonesNav">
-            <a href="#">Empresa</a>
-            <a class="animated  infinite" href="<?php bloginfo(url); ?>/tienda">Tienda</a>
-            <a href="<?php bloginfo(url); ?>/preguntasfrecuentes">Preguntas</a>
-            <a href="<?php bloginfo(url); ?>/contacto">Contacto</a>
+            <a href="<?php bloginfo('url'); ?>#empresa">Empresa</a>
+            <a class="animated shake  infinite" href="<?php bloginfo('url'); ?>/tienda">Tienda</a>
+            <a href="<?php bloginfo('url'); ?>/preguntasfrecuentes">Preguntas</a>
+            <a href="<?php bloginfo('url'); ?>/contacto">Contacto</a>
         </div>
     </div>
 </nav>
@@ -20,25 +20,25 @@
             <div class="bar3"></div>
         </div>
     </a>
-    <a href="<?php bloginfo(url); ?>/">
+    <a href="<?php bloginfo('url'); ?>/">
         <img style="width:140px;display:block;margin:2px auto;" src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="logo">
     </a>
     </div>
   <!-- Navbar on small screens -->
   <div id="navDemo" class="animated bounceInLeft w3-bar-block w3-white w3-hide">
-    <a href="#" class="w3-bar-item w3-button">
+    <a href="<?php bloginfo('url'); ?>#empresa" class="w3-bar-item w3-button">
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:red;"></i>
         <h5>Empresa</h5>
     </a>
-    <a href"<?php bloginfo(url); ?>/tienda" class="w3-bar-item w3-button">
+    <a href"<?php bloginfo('url'); ?>/tienda" class="w3-bar-item w3-button">
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:blue;"></i>
         <h5>Tienda</h5>
     </a>
-    <a href="<?php bloginfo(url); ?>/preguntasfrecuentes" class="w3-bar-item w3-button">
+    <a href="<?php bloginfo('url'); ?>/preguntasfrecuentes" class="w3-bar-item w3-button">
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:green;"></i>
         <h5>Preguntas</h5>
     </a>
-    <a href="<?php bloginfo(url); ?>/contacto" class="w3-bar-item w3-button">
+    <a href="<?php bloginfo('url'); ?>/contacto" class="w3-bar-item w3-button">
     <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:purple;"></i>
         <h5>Contacto</h5>
     </a>
