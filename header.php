@@ -25,9 +25,6 @@
     <!-- Aca el Animate CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/animate.css">
 
-    <!-- Acá iria tu hermana -->
-    <link rel="stylesheet" href="/css/hermanaDeFrank.css">
-
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mediaQuery.css">

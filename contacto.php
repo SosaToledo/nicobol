@@ -139,11 +139,11 @@
     ?>
     <div class="content formulario">
       <section id="formulario">
-        <form class="" action="index.html" method="post">
+        <form class="" action="<?php bloginfo(url);?>/envio" method="POST">
           <div class="texto">
-            <input class="nombreInput" type="text" name="" value="" placeholder="Nombre">
-            <input class="correoInput" type="text" name="" value="" placeholder="Correo">
-            <textarea name="name" rows="8" cols="80" placeholder="Deja tu mensaje"></textarea>
+            <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre">
+            <input class="correoInput" type="text" name="correo" value="" placeholder="Correo">
+            <textarea name="mensaje" rows="8" cols="80" placeholder="Deja tu mensaje"></textarea>
           </div>
           <button type="submit" name="button"> <i class="fa fa-arrow-right"></i> Enviar</button>
         </form>
@@ -179,3 +179,4 @@
       }
   </script>
 </html>
+
