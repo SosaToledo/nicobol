@@ -139,7 +139,7 @@
     ?>
     <div class="content formulario">
       <section id="formulario">
-        <form class="" action="<?php bloginfo(url);?>/envio" method="POST">
+        <form class="" action="<?php bloginfo(url);?>/contacto" method="POST">
           <div class="texto">
             <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre">
             <input class="correoInput" type="text" name="correo" value="" placeholder="Correo">
@@ -178,5 +178,15 @@
           }
       }
   </script>
+  <?php
+    /**
+      * Template Name: Pagina de envio
+    **/
+    /*Toma de variables*/ 
+    $nombre = $_POST['nombre'];
+    $correo = $_POST['correo'];
+    $mensaje ="nombre del cliente: ".$nombre.". Correo: ".$correo.". Mensaje: ".$_POST['mensaje'];
+    mail('luchososa1990@gmail.com','consulta',$mensaje);
+  ?>
 </html>
 
