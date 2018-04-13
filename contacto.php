@@ -179,13 +179,12 @@
       }
   </script>
   <?php
-    /**
-      * Template Name: Pagina de envio
-    **/
     /*Toma de variables*/ 
     $nombre = $_POST['nombre'];
     $correo = $_POST['correo'];
+    /**creación de mensaje */
     $mensaje ="nombre del cliente: ".$nombre.". Correo: ".$correo.". Mensaje: ".$_POST['mensaje'];
+    /**envio de correo */
     mail('luchososa1990@gmail.com','consulta',$mensaje);
   ?>
 </html>
