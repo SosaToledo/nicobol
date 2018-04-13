@@ -20,14 +20,14 @@
             <ul>
                 <li><a class="scroll" href="#empresa">Empresa</a></li>
                 <li><a  class="animated shake infinite" href="<?php bloginfo('url'); ?>/tienda">Tienda</a></li>
-                <li><a href="<?php bloginfo('url'); ?>/preguntasfrecuentes">Preguntas</a></li>
+                <li><a href="#" title="Proximamente" >Preguntas</a></li>
                 <li><a href="<?php bloginfo('url'); ?>/contacto">Contacto</a></li>
             </ul>
         </div>
         <div class="menuMediano sm-12">
             <a href="#empresa" class="menuFlex scroll">Empresa</a>
             <a href="<?php bloginfo('url');?>/tienda" class="menuFlex">Tienda</a>
-            <a href="<?php bloginfo('url');?>/preguntasfrecuentes" class="menuFlex">Preguntas Frecuentes</a>
+            <a href="#" title="Proximamente" class="menuFlex">Preguntas Frecuentes</a>
             <a href="<?php bloginfo('url');?>/contacto" class="menuFlex">Contacto</a>
         </div>
         <i class="fa fa-angle-double-down cta animated infinite fadeOutDown"></i>	

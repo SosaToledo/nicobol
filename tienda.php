@@ -68,31 +68,7 @@ get_header();
             </ul>
         </div>
         <div class="card">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/marmolada.jpg" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Kico Marmolada</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 200, 150, 100 un.</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - marmolada</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 130, 220, 320 g.</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 35, 45, 55 cm.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/volleyFlour.jpg" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Voley Flúor</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 100 unidades</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - Flúor</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 250 g.</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 22 cm.</li>
-            </ul>
-        </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/marmoladaChica.jpg" alt="">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/marmoladaChica.png" alt="">
             <div class="card-body">
                 <h5 class="card-title">Marmolada (chica)</h5>
             </div>
@@ -103,18 +79,7 @@ get_header();
                  <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 24 cm.</li>
             </ul>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/publicitaria.jpg" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Pelotas publicitarias</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 500 unidades</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - Consultar</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 70 g.</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 24 cm.</li>
-            </ul>
-        </div>
+        
         <div class="card">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/lisas.jpg" alt="">
             <div class="card-body">
@@ -152,6 +117,18 @@ get_header();
             </ul>
         </div>
         <div class="card">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/pulpa.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Pulpa</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 100 unidades</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - ------</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 120 a 240 g.</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 12, 24, 35 cm.</li>
+            </ul>
+        </div>
+        <div class="card">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/gym.jpg" alt="">
             <div class="card-body">
                 <h5 class="card-title">Para gym</h5>
@@ -161,6 +138,18 @@ get_header();
                  <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - Celeste metal, roja, azul, amarilla</li>
                  <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 1, 1.2, 0.9, 1.2 kg.</li>
                  <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 65, 75, 55, 85 cm.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/publicitaria.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Pelotas publicitarias</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 500 unidades</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - Consultar</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 70 g.</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 24 cm.</li>
             </ul>
         </div>
         <div class="card">
@@ -176,6 +165,30 @@ get_header();
             </ul>
         </div>
         <div class="card">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/marmolada.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Kico Marmolada</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 200, 150, 100 un.</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - marmolada</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 130, 220, 320 g.</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 35, 45, 55 cm.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/volleyFlour.png" alt="">
+            <div class="card-body">
+                <h5 class="card-title">Voley Flúor</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 100 unidades</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - Flúor</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 250 g.</li>
+                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 22 cm.</li>
+            </ul>
+        </div>
+        <div class="card">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/minibasquet.jpg" alt="">
             <div class="card-body">
                 <h5 class="card-title">Minibasquet</h5>
@@ -187,18 +200,7 @@ get_header();
                  <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 10 a 15 cm.</li>
             </ul>
         </div>
-        <div class="card">
-            <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/pulpa.jpg" alt="">
-            <div class="card-body">
-                <h5 class="card-title">Pulpa</h5>
-            </div>
-            <ul class="list-group list-group-flush">
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/bolsa-de-la-compra.png" alt="unidades por bulto"> - 100 unidades</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/paleta-de-pintura.png" alt="colores"> - ------</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/peso-de-kilos.png" alt="peso"> - 120 a 240 g.</li>
-                 <li class="list-group-item"><img src="<?php echo get_template_directory_uri(); ?>/img/iconos/regla.png" alt="dimension"> - 12, 24, 35 cm.</li>
-            </ul>
-        </div>
+        
         <div class="card">
             <img class="card-img-top" src="<?php echo get_template_directory_uri(); ?>/img/saltarinaChica.jpg" alt="">
             <div class="card-body">
@@ -249,4 +251,5 @@ get_header();
         </div>  
     </section>
 </body>
+<?php get_footer();?>
 </html>

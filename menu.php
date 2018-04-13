@@ -4,7 +4,9 @@
         <div class="botonesNav">
             <a href="<?php bloginfo('url'); ?>#empresa">Empresa</a>
             <a class="animated shake  infinite" href="<?php bloginfo('url'); ?>/tienda">Tienda</a>
-            <a href="<?php bloginfo('url'); ?>/preguntasfrecuentes">Preguntas</a>
+            <a disabled="disabled" title="Proximamente" href="#" >Preguntas</a>
+            <!-- /preguntasfrecuentes -->
+            <?php //bloginfo('url'); ?>
             <a href="<?php bloginfo('url'); ?>/contacto">Contacto</a>
         </div>
     </div>
@@ -34,7 +36,7 @@
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:blue;"></i>
         <h5>Tienda</h5>
     </a>
-    <a href="<?php bloginfo('url'); ?>/preguntasfrecuentes" class="w3-bar-item w3-button">
+    <a href="#" disabled="disabled" title="Proximamente" class="w3-bar-item w3-button">
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:green;"></i>
         <h5>Preguntas</h5>
     </a>
