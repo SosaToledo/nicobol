@@ -2,6 +2,7 @@
 /**
  * Template Name: Pagina de Contacto
  **/
+get_header();
  ?>
     <style media="screen">
       @media screen and (max-width:800px) {
@@ -134,7 +135,7 @@
       }
     </style>
   <body id="#bodyContacto">
-    <?php get_header();
+    <?php
         get_template_part( 'menu');
     ?>
     <div class="content formulario">
@@ -161,7 +162,7 @@
       </section>
     </div>
     <div class="barraRoja">
-      <a style="text-decoration:none;" href="www.thinkincode.com.ar">
+      <a style="text-decoration:none;" href="thinkincode.com.ar">
         <h3 style="text-align:center;color:white;">Desarrollado con <i class="fa fa-heart"></i> por Thinco.</h3>
       </a>
     </div>
@@ -185,7 +186,7 @@
     /**creación de mensaje */
     $mensaje ="nombre del cliente: ".$nombre.". Correo: ".$correo.". Mensaje: ".$_POST['mensaje'];
     /**envio de correo */
-    mail('luchososa1990@gmail.com','consulta',$mensaje);
+    mail('contacto@nicobol.com','consulta',$mensaje);
   ?>
 </html>
 

@@ -27,7 +27,7 @@ get_header();
     }
 </style>
 <body>
-    <?php get_header();
+    <?php
         get_template_part( 'menu');
     ?>
     <section class="contendedor">
