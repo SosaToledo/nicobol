@@ -142,9 +142,9 @@ get_header();
       <section id="formulario">
         <form class="" action="<?php bloginfo(url);?>/contacto" method="POST">
           <div class="texto">
-            <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre">
-            <input class="correoInput" type="text" name="correo" value="" placeholder="Correo">
-            <textarea name="mensaje" rows="8" cols="80" placeholder="Deja tu mensaje"></textarea>
+            <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre" required>
+            <input class="correoInput" type="text" name="correo" value="" placeholder="Correo" required>
+            <textarea name="mensaje" rows="8" cols="80" placeholder="Deja tu mensaje" required></textarea>
           </div>
           <button type="submit" name="button"> <i class="fa fa-arrow-right"></i> Enviar</button>
         </form>
@@ -162,7 +162,7 @@ get_header();
       </section>
     </div>
     <div class="barraRoja">
-      <a style="text-decoration:none;" href="thinkincode.com.ar">
+      <a style="text-decoration:none;" href="http://www.thinkincode.com.ar">
         <h3 style="text-align:center;color:white;">Desarrollado con <i class="fa fa-heart"></i> por Thinco.</h3>
       </a>
     </div>

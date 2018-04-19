@@ -32,7 +32,7 @@
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:red;"></i>
         <h5>Empresa</h5>
     </a>
-    <a href"<?php bloginfo('url'); ?>/tienda" class="w3-bar-item w3-button">
+    <a href="<?php bloginfo('url'); ?>/tienda" class="w3-bar-item w3-button">
         <i class="animated pulse infinite fa fa-circle" style="font-size:16px;color:blue;"></i>
         <h5>Tienda</h5>
     </a>
