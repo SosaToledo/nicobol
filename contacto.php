@@ -186,7 +186,7 @@ get_header();
     /**creación de mensaje */
     $mensaje ="nombre del cliente: ".$nombre.". Correo: ".$correo.". Mensaje: ".$_POST['mensaje'];
     /**envio de correo */
-    mail('contacto@nicobol.com','consulta',$mensaje);
+    mail('nicobolgrin@gmail.com','consulta',$mensaje);
   ?>
 </html>
 
