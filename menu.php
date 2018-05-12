@@ -47,6 +47,9 @@
   </div>
 </div>
 
+<div style="width:0;height:0;font-size: 0px;">Fábrica de pelotas de plastisol, 20 modelos diferentes. Pelotas de kiko, publicitarias, gimnasio, pilates, esferodinamia y mas</div>
+
+
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
 function toggleFunction(x) {

@@ -14,12 +14,17 @@
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
     <!---->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-    <title>NicoBol</title>
+    <title>Pelotas NicoBol</title>
 
+    <meta name="description" content="Fábrica de pelotas de plastisol, 20 modelos diferentes. Pelotas de kiko, publicitarias, gimnasio, pilates, esferodinamia y mas">
+    <meta name="keywords" content="fabrica de pelotas, pelotas, plastisol, buenos aires, pelotas publicitarias">
+    <meta name="author" content="Thinco">
+    
     <!-- Font Awesome para iconos y mas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -40,5 +45,16 @@
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mediaQuery.css">
+
+    <!-- Google Analitycs -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107712661-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-107712661-3');
+    </script>
 
 </head>
