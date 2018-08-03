@@ -178,15 +178,6 @@ get_header();
               $empresa.height(window.innerHeight);
           }
       }
-  </script>
-  <?php
-    /*Toma de variables*/ 
-    $nombre = $_POST['nombre'];
-    $correo = $_POST['correo'];
-    /**creación de mensaje */
-    $mensaje ="nombre del cliente: ".$nombre.". Correo: ".$correo.". Mensaje: ".$_POST['mensaje'];
-    /**envio de correo -nicobolgrin */
-    mail('luchososa1990@gmail.com','consulta',$mensaje);
-  ?>
+</script>
 </html>
 
