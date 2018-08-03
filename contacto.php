@@ -140,7 +140,7 @@ get_header();
     ?>
     <div class="content formulario">
       <section id="formulario">
-        <form class="" action="<?php bloginfo(url);?>/contactos" method="POST">
+        <form class="" action="<?php bloginfo(url);?>/contacto" method="POST">
           <div class="texto">
             <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre" required>
             <input class="correoInput" type="text" name="correo" value="" placeholder="Correo" required>
@@ -179,5 +179,18 @@ get_header();
           }
       }
 </script>
+<?php
+/**Toma de variables */
+  $persona = $_POST['nombre'];
+  $correo = $_POST['correo'];
+  $consulta = $_POST['mensaje'];
+
+/**Creación del documento */
+  $destinatario = "luchososa1990@gmail.com";
+  $asunto = "Consulta para Thinco";
+  $cuerpo = $persona." envio desde: ".$correo." la consulta: ".$consulta;
+
+  mail($destinatario,$asunto,$cuerpo);
+?>
 </html>
 
