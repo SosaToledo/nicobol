@@ -140,6 +140,7 @@ get_header();
     ?>
     <div class="content formulario">
       <section id="formulario">
+       <?php echo do_shortcode('[contact-form-7 id="14" title="Formulario de contacto 1"]');?>
         <form class="" action="<?php bloginfo(url);?>/contacto" method="POST">
           <div class="texto">
             <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre" required>
