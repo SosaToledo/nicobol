@@ -140,7 +140,7 @@ get_header();
     ?>
     <div class="content formulario">
       <section id="formulario">
-        <form class="" action="<?php bloginfo(url);?>/contacto" method="POST">
+        <form class="" action="<?php bloginfo(url);?>/contactos" method="POST">
           <div class="texto">
             <input class="nombreInput" type="text" name="nombre" value="" placeholder="Nombre" required>
             <input class="correoInput" type="text" name="correo" value="" placeholder="Correo" required>
